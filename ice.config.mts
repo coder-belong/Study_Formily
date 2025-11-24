@@ -13,12 +13,11 @@ export default defineConfig(() => ({
   ssg: false,
   routes: {
     ignoreFiles: [
-      'custom.tsx',
       '**/components/**', // 如果每个页面下有 components 目录存放当前页面的组件，可以通过添加此配置忽略被解析成路由组件
     ],
     publicPath: './',
-    defineRoutes: (route) => {
-      route('/', '01_simple-formily/index')
-    },
+    // defineRoutes: (route) => {
+    //   route('/', '01_simple-formily/index')
+    // },
   },
 }))
