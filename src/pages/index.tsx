@@ -1,17 +1,22 @@
-import SimpleDemo from '@/components/01-formily基本使用'
-import FormilyDependentDemo from '@/components/02_formily依赖联动-表单字段查询'
+import SimpleDemo from '@/components/01-formily-初体验'
+import FormilyDemo from '@/components/02_formily-form操作字段节点'
+import FormilyDemo2 from '@/components/03_formily-field操作字段节点'
 
 import { Card, Flex } from 'antd'
 
 const App: React.FC = () => {
   return (
     <Flex vertical gap={16}>
-      <Card title="Formily基本使用">
+      <Card title="01-formily-初体验">
         <SimpleDemo />
       </Card>
 
-      <Card title="表单字段查询">
-        <FormilyDependentDemo />
+      <Card title="02_formily-form获取和修改字段状态">
+        <FormilyDemo />
+      </Card>
+
+      <Card title="03_formily-field获取和修改字段状态">
+        <FormilyDemo2 />
       </Card>
     </Flex>
   )
