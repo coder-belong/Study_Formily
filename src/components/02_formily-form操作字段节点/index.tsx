@@ -15,14 +15,14 @@ const SchemaField = createSchemaField({
 const form = createForm()
 
 const FormilyDemo: React.FC = () => {
-  // ---------- 获取表单字段的信息 --------------
+  // ---------- 获取表单字段的信息(getFieldState) --------------
   const handleGetFormInfo = () => {
     const { value, required, visible, disabled } = form.getFieldState('username')
     console.log(value, required, visible, disabled)
     console.log(form.getValuesIn('username')) // 获取表单值
   }
 
-  // --------- 改表单字段的状态 ----------
+  // --------- 改表单字段的状态(setFieldState) ----------
   const handleSetFormInfo = () => {
     form.setFieldState('username', (field) => {
       field.value = '张三' // 更改值
