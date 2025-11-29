@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, FormItem, Input, Select } from '@formily/antd-v5'
-import { Field, createForm, onFieldValueChange } from '@formily/core'
+import { createForm, onFieldValueChange } from '@formily/core'
 import { createSchemaField } from '@formily/react'
 
 const SchemaField = createSchemaField({
@@ -23,7 +23,7 @@ const form = createForm({
       })
     })
 
-    // 监听 goodStatus 字段的变化
+    // 监听 status 字段的变化
     onFieldValueChange('status', (statusField) => {
       // -------- 一对多 联动 ----------
       form.setFieldState('*(username, age)', (commonField) => {

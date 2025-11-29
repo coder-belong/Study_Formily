@@ -17,9 +17,10 @@ const form = createForm()
 const FormilyDemo: React.FC = () => {
   // ---------- 获取表单字段的信息(getFieldState) --------------
   const handleGetFormInfo = () => {
-    const { value, required, visible, disabled } = form.getFieldState('username')
-    console.log(value, required, visible, disabled)
-    console.log(form.getValuesIn('username')) // 获取表单值
+    console.log('form', form.values)
+    // const { value, required, visible, disabled } = form.getFieldState('username')
+    // console.log(value, required, visible, disabled)
+    // console.log(form.getValuesIn('username')) // 获取表单值
   }
 
   // --------- 改表单字段的状态(setFieldState) ----------
