@@ -1,9 +1,9 @@
-// import SimpleDemo from '@/components/01-formily-初体验'
+import FormilyDemo from '@/components/01-formily-初体验'
 // import FormilyDemo from '@/components/02_formily-form操作字段节点'
 // import FormilyDemo2 from '@/components/03_formily-field操作字段节点'
 // import FormilyDemo3 from '@/components/04_formily-effect联动'
 // import FormilyDemo from '@/components/05_formily-schema联动'
-import FormilyDemo from '@/components/06_formily-onChange联动'
+// import FormilyDemo from '@/components/06_formily-onChange联动'
 
 import { Card, Flex } from 'antd'
 
